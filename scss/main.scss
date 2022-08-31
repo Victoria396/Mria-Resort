@@ -1,0 +1,42 @@
+@import "_var";
+@import "_fonts";
+@import "_reset";
+
+a, p, h2, button {
+    color: $gray;
+    font-family: EuclidB;
+    text-transform: uppercase;
+    tab-size: 14px;
+}
+
+a, button {
+    cursor: pointer;
+    &:hover {
+        color: $gold;
+    }
+}
+
+h1 {
+    font-family: SangKung;
+    color: $gray;
+    font-size: 96px;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textWhite {
+    color: $white;
+    text-transform: inherit
+}
+
+
+@import "_header";
+@import "_mria";
+@import "_choice";
+@import "_slider-sales";
+

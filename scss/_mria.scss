@@ -1,0 +1,183 @@
+@import "_var";
+.mria {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mria__text {
+    width: 50%;
+}
+
+.mria__bkg-img {
+    background-image: url(../img/flower.png);
+    width: 86%;
+    height: 960px;
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin-top: -90px;
+    position: relative;
+}
+
+.mria__bkg-eff {
+    background-image: url(../img/flower_stroke.png);
+    width: 40%;
+    height: 925px;
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin-top: 0px;
+    position: relative;
+    margin-left: -41px;
+}
+
+.mria__weather-bkg {
+    margin-top: 90px;
+    margin-left: 277px;
+}
+
+.mria__weather-bkg-eff {
+    position: absolute;
+    margin-left: -720px;
+    margin-top: 90px;
+}
+
+.mria__weather-info {
+    margin-top: -260px;
+    margin-left: 610px;
+}
+
+.mria__weather-pic {
+    margin-left: -80px;
+    padding-top: 43px;
+}
+
+.mria__weather-temp {
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: -40px;
+}
+
+.mria__weather-info-text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.mria__weather-info-subtext {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mria__weather-info-gps {
+    display: flex;
+    margin-top: 7px;
+}
+
+.mria__weather-info-pin {
+    margin-left: -35px;
+    margin-right: 24px;
+    height: 16px;
+    margin-top: 2px;
+}
+
+.mria__social {
+    margin-top: -694px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mria__social-item {
+    margin-right: 84px;
+    margin-left: auto;
+    margin-top: 49px;
+    width: 2%;
+    border-radius: 100%;
+    padding: 14px;
+    background-color: $white;
+    &:hover {
+        background-color: $gold;
+    }
+}
+
+.mria__social-border {
+    position: absolute;
+    margin-top: -22px;
+    margin-left: -23px;
+    width: 7%;
+}
+
+.mria__social-faceB {
+    padding: 0px 4px;
+}
+
+.mria__waves {
+    margin-top: 14px;
+    margin-left: 50px;
+}
+
+.mria__under-text {
+    margin-top: 24px;
+    margin-left: 140px;
+}
+
+.mria__title {
+    margin-top: 43px;
+    margin-left: 138px;
+    font-size: 107px;
+    letter-spacing: 2px;
+}
+
+.mria__title2 {
+    letter-spacing: 4px;
+    margin-top: -11px;
+}
+
+.mria__sub-title {
+    text-transform: inherit;
+    margin-top: 41px;
+    margin-left: 139px;
+    font-size: 24px;
+    line-height: 30px;
+    width: 100%;
+}
+
+.mria__btn {
+    margin-top: 58px;
+    margin-left: 140px;
+    width: 100%;
+}
+
+.mria__btn-room {
+    color: $white;
+    border: none;
+    background-color: $gold;
+    border-radius: 6px;
+    padding: 24px 34px;
+    letter-spacing: 3px;
+    margin-right: 36px;
+}
+
+.mria__btn-3d {
+    color: $gray;
+    border: 1px solid $gold;
+    background-color: $white;
+    border-radius: 6px;
+    padding: 23px 66px;
+    letter-spacing: 3px;
+    margin-right: 36px;
+}
+
+.mria__line {
+    margin-top: 24px;
+    margin-left: 172px;
+}
+
+.mria__arrow {
+    margin-top: 22px;
+    margin-left: 142px;
+    border: 1px solid $gold;
+    border-radius: 100%;
+    width: 14px;
+    padding: 22px 23px;
+}
+
+

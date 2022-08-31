@@ -1,0 +1,100 @@
+@import "_var";
+
+
+.header__wrp {
+    width: 1300px;
+}
+
+.header__menu {
+    background-color: $gray;
+    width: 80px;
+    height: 80px;
+}
+
+.header__menu-open {
+    margin-left: 24px;
+    margin-top: 27px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__item-menu {
+    margin-right: 64px;
+    margin-top: 5px;
+}
+
+.header__logo-stars {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__logo {
+    margin-top: 5px;
+    width: 66px;
+    height: 56px;
+}
+
+.header__stars {
+    margin-top: 12px;
+}
+
+.header__leng {
+    margin-right: 90px;
+}
+
+.margLeft {
+    margin-left: -30px;
+}
+
+.header__item2 {
+    margin-right: 0px;
+}
+
+.leng-right {
+    margin-right: 24px;
+}
+
+.header__list-entry {
+    z-index: 10;
+}
+
+.entry-right {
+    margin-right: 40px;
+}
+
+.text-colorWh {
+    color: $white;
+}
+
+.dot {
+    border-bottom: 2px dashed $white; 
+}
+
+.header__line {
+    margin-top: -3px;
+}
+
+.line {
+    size: 1px;
+    color: $gray;
+    width: 47%;
+    margin-top: 0;
+    margin-left: 0;
+    opacity: 0.3;
+}
+
+.line2 {
+    margin-left: 53%;
+    margin-right: 0;
+    size: 1px;
+    color: $gray;
+    width: 46%;
+    margin-top: -11px;
+    opacity: 0.3;
+    z-index: 100;
+    position: absolute;
+}

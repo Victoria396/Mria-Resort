@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'EuclidA';
+    src: url('../fonts/EuclidCircularA-SemiBold.eot');
+    src: local('Euclid Circular A SemiBold'),
+        url('../fonts/EuclidCircularA-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularA-SemiBold.woff2') format('woff2'),
+        url('../fonts/EuclidCircularA-SemiBold.woff') format('woff'),
+        url('../fonts/EuclidCircularA-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidB';
+    src: url('../fonts/EuclidCircularB-Medium.eot');
+    src: local('Euclid Circular A SemiBold'),
+        url('../fonts/EuclidCircularB-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-Medium.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Medium.woff') format('woff'),
+        url('../fonts/EuclidCircularB-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidB';
+    src: url('../fonts/EuclidCircularB-Regular.eot');
+    src: local('Euclid Circular A SemiBold'),
+        url('../fonts/EuclidCircularB-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-Regular.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Regular.woff') format('woff'),
+        url('../fonts/EuclidCircularB-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EuclidB';
+    src: url('../fonts/EuclidCircularB-Light.eot');
+    src: local('Euclid Circular A SemiBold'),
+        url('../fonts/EuclidCircularB-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/EuclidCircularB-Light.woff2') format('woff2'),
+        url('../fonts/EuclidCircularB-Light.woff') format('woff'),
+        url('../fonts/EuclidCircularB-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SangKung';
+    src: url('../fonts/SangBleuKingdom-Regular-WebXL.otf');
+    src: local('SangBleuKingdom-Regular-WebXL.otf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SangKung';
+    src: url('../fonts/SangBleuKingdom-Bold-WebXL.otf');
+    src: local('SangBleuKingdom-Bold-WebXL.otf');
+    font-weight: 700;
+    font-style: normal;
+}

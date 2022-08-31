@@ -1,0 +1,142 @@
+@import "_var";
+
+.choice__title {
+    font-family: "SangKung";
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    text-transform: inherit;
+    margin-top: -68px;
+    letter-spacing: 1px;
+}
+
+.wrp {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1160px;
+}
+
+.choice__list {
+    display: flex;
+    margin-top: 59px;
+    margin-left: 9px;
+}
+
+.choice__item {
+    display: flex;
+    margin-right: 100px;
+    border: 1px solid rgba(61, 60, 60, .2);;
+    padding: 7px 14px;
+    margin-right: 8px;
+    width: 100%;
+}
+
+.choice__item-text {
+    text-transform: inherit;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    white-space: nowrap;
+    &:hover {
+        color: $gold;
+    }
+}
+
+.item1 {
+    padding-right: 156px;
+    max-width: 155px;
+    height: 50px;
+}
+
+.item2 {
+    width: 190px;
+    padding-right: 57px;
+    height: 50px;
+}
+
+.item3 {
+    width: 300px;
+    padding-right: 76px;
+    padding-left: 15px;
+    height: 50px;
+}
+
+.choice__item-button {
+    background-color: $gray;
+    color: $white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    text-transform: inherit;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    width: 144px;
+    height: 80px;
+    margin-top: -9px;
+}
+
+.choice__item-pic {
+    &:hover {
+        fill: $gray;
+    }
+}
+
+.pic1 {
+    margin-left: 154px;
+    margin-top: 13px;
+}
+
+.pic2 {
+    margin-left: 56px;
+    margin-top: 13px;
+}
+
+.pic3 {
+    margin-left: 77px;
+    margin-top: 13px;
+}
+
+.choice__tab-list {
+    display: flex;
+    margin-top: 38px;
+    margin-bottom: 30px;
+}
+
+.choice__tab-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 9px;
+    margin-right: 42px;
+    margin-left: -5px;
+    letter-spacing: 1px;
+}
+
+.choice__tab-item-active {
+    color: $gold;
+    border-bottom: 2px solid $gold;
+}
+
+.choice__tab-body-item {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.choice__tab-body-active {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.choice__hr {
+    margin-top: -30px;
+    opacity: .3;
+}
+
