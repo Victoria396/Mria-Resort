@@ -38,9 +38,9 @@
             <a href="#">
                 <img class="header__logo" src="img/logo.png" alt="logo">
             </a>
-            <img class="header__stars" src="img/stars.png" alt="stars">
+            <img class="header__stars" src="img/stars.jpg" alt="stars">
         </div>
-        <ul class="header__list header__leng">
+        <ul class="header__leng">
             <li>
                 <a class="header__leng leng-right" href="#">Ru</a>
             </li>
@@ -48,14 +48,14 @@
                 <a href="#">Eng</a>
             </li>
         </ul>
-        <ul class="header__list header__list-entry">
+        <ul class="header__list-entry">
             <li>
                 <a href="#">
-                    <img src="img/key.png" alt="key">
+                    <img class="header__list-entry-img" src="img/key.png" alt="key">
                 </a>
             </li>
             <li>
-                <a class="header__item2 entry-right text-colorWh dot" href="#">Вход</a>
+                <a class="header__item2 text-colorWh dot" href="#">Вход</a>
             </li>
             <li>
                 <a class="text-colorWh" href="#">8 800 500 6847</a>
@@ -64,7 +64,72 @@
     </div>
     <div class="header__line">
         <hr class="line">
-        <hr class="line2">
+    </div>
+    <div class="menu__popup">
+        <div class="header__open">
+            <div>
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="header__menu-close">
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.38092 0L28.9993 27.619L27.6183 29L0 1.38095L1.38092 0Z" fill="white"/>
+                    <path d="M27.6191 0L0.000743929 27.619L1.38166 29L29 1.38095L27.6191 0Z" fill="white"/>
+                </svg>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <p>Размещение</p>
+                </li>
+                <li>
+                    <p>Медицина</p>
+                </li>
+                <li>
+                    <p>Мероприятия</p>
+                </li>
+                <li>
+                    <p>Красота и восстановление</p>
+                </li>
+                <li>
+                    <p>Бары и рестораны</p>
+                </li>
+                <li>
+                    <p>Развлечения</p>
+                </li>
+                <li>
+                    <p>Спорт</p>
+                </li>
+                <li>
+                    <p>Транспорт</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <p>Клиника персонализированной медицины</p>
+                </li>
+                <li>
+                    <p>Медицинский центр</p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>Международные стандарты лечения и современные методики в сочетании с высококлассным сервисом и проживанием в одном из лучших семейных курортов мира Mriya Resort & SPA 5* </p>
+        </div>
+        <div class="slider">
+            <div>
+                <img src="img/header-slider.jpg" alt="slider">
+                <img src="img/header-slider-bkg.png" alt="">
+                <h3>Антистресс</h3>
+                <p>10-21 дня</p>
+                <button>Подробнее</button>
+            </div>
+        </div>
+        <div>
+            <p>info@mriyaresort.com</p>
+        </div>
     </div>
 </header>
 <main>
@@ -78,8 +143,8 @@
             <h1 class="mria__title mria__title2">Resort</h1>
             <h2 class="mria__sub-title">Российский курорт для всей семьи<br>на берегу черного моря</h2>
             <div class="mria__btn">
-                <button class="mria__btn-room">Найти номер</button>
-                <button class="mria__btn-3d">3D тур</button>
+                <button class="mria__btn-room mria__btn-style">Найти номер</button>
+                <button class="mria__btn-3d mria__btn-style">3D тур</button>
             </div>
             <div class="mria__line">
                 <img src="img/line-gold.png" alt="line">
@@ -91,7 +156,6 @@
             </div>
         </div>
         <div class="mria__bkg-img">
-            <div class="mria__bkg-eff"></div>
             <div class="mria__social">
                 <div class="mria__social-item">
                     <img class="mria__social-border" src="img/pad.png" alt="pad">
@@ -123,7 +187,6 @@
             </div>
             <div class="mria__weather">
                 <div>
-                    <img  class="mria__weather-bkg" src="img/Intersect.png" alt="">
                     <img  class="mria__weather-bkg-eff" src="img/Intersect (1).png" alt="">
                 </div>
                 <div class="mria__weather-info">   
@@ -134,7 +197,7 @@
                     <p class="mria__weather-info-text textWhite">Облачно</p>
                     <div class="mria__weather-info-gps">
                         <img class="mria__weather-info-pin" src="img/pin.png" alt="pin">
-                        <p class="mria__weather-info-subtext textWhite">Ялта, Россия</p>
+                        <p class="mria__weather-info-subtext textWhite">Ялта,&nbspРоссия</p>
                     </div>
                 </div>
             </div>
@@ -301,14 +364,71 @@
             </div>
         </div>
     </section>
-    <section class="inclusive"></section>
+    <section class="inclusive">
+        <h2 class="inclusive__title">Все включено</h2>
+        <div class="inclusive__slider">
+            <div class="inclusive__slide1">
+                <img class="inclusive__img" src="img/inclusive-slide1.jpg" alt="slide">
+                <p class="inclusive__text inclusive__text1">Заниматесь в тренажерном зале и посещайте групповые тренировки</p>
+                <a class="inclusive__link" href="#">Читать больше</a>
+                <svg class="inclusive__svg" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="16" height="2" fill="#AB955E"/>
+                </svg>
+            </div>
+            <div class="inclusive__slide2">
+                <p class="inclusive__subtitle">Оздоровление</p>
+                <p class="inclusive__subtext">Mriya Resort — это маленький город со множеством возможностей, каждый найдет себе занятие по вкусу</p>
+                <img class="inclusive__img" src="img/inclusive-slide2.jpg" alt="slide">
+                <p class="inclusive__text inclusive__text2">Питаться в ресторане шведской линии согласно выбранному варианту</p>
+                <a class="inclusive__link" href="#">Читать больше</a>
+                <svg class="inclusive__svg" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="16" height="2" fill="#AB955E"/>
+                </svg>
+            </div>
+            <div class="inclusive__slide3">
+                <img class="inclusive__img" src="img/inclusive-slide3.jpg" alt="slide">
+                <p class="inclusive__text inclusive__text3">Исследовать все общедоступные зоны и территории комплекса</p>
+                <a class="inclusive__link" href="#">Читать больше</a>
+                <svg class="inclusive__svg" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="16" height="2" fill="#AB955E"/>
+                </svg>
+            </div>
+                        <div class="inclusive__slide1">
+                <img class="inclusive__img" src="img/inclusive-slide1.jpg" alt="slide">
+                <p class="inclusive__text inclusive__text1">Заниматесь в тренажерном зале и посещайте групповые тренировки</p>
+                <a class="inclusive__link" href="#">Читать больше</a>
+                <svg class="inclusive__svg" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="16" height="2" fill="#AB955E"/>
+                </svg>
+            </div>
+            <div class="inclusive__slide2">
+                <p class="inclusive__subtitle">Оздоровление</p>
+                <p class="inclusive__subtext">Mriya Resort — это маленький город со множеством возможностей, каждый найдет себе занятие по вкусу</p>
+                <img class="inclusive__img" src="img/inclusive-slide2.jpg" alt="slide">
+                <p class="inclusive__text inclusive__text2">Питаться в ресторане шведской линии согласно выбранному варианту</p>
+                <a class="inclusive__link" href="#">Читать больше</a>
+                <svg class="inclusive__svg" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="16" height="2" fill="#AB955E"/>
+                </svg>
+            </div>
+            <div class="inclusive__slide3">
+                <img class="inclusive__img" src="img/inclusive-slide3.jpg" alt="slide">
+                <p class="inclusive__text inclusive__text3">Исследовать все общедоступные зоны и территории комплекса</p>
+                <a class="inclusive__link" href="#">Читать больше</a>
+                <svg class="inclusive__svg" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="16" height="2" fill="#AB955E"/>
+                </svg>
+            </div>
+        </div>
+    </section>
     <section class="tablet">
         <div class="tablet__bkg">
             <div class="tablet__content">
-                <img src="img/tablet.png" alt="tablet">
-                <img class="tablet__logo" src="img/logo.png" alt="logo">
+                <img class="tablet__tablet" src="img/tablet.png" alt="tablet">
             </div>
-            
+        </div>
+        <div class="tablet__logo">
+            <img src="img/logo.png" alt="logo">
         </div>
     </section>
 </main>

@@ -1,0 +1,97 @@
+.inclusive {
+    max-width: 100%;
+    width: 100%;
+}
+
+.inclusive .prev {
+    position: relative;
+    left: 619px;
+    top: 49px;
+}
+
+.inclusive .next {
+    position: relative;
+    top: -695px;
+    left: 676px;
+}
+
+.inclusive__title {
+    font-family: "SangKung";
+    font-weight: 700;
+    font-size: 73px;
+    line-height: 56px;
+    margin-left: 142px;
+    margin-top: 80px;
+}
+
+.inclusive__text {
+    width: 228px;
+    margin-top: 22px;
+    margin-left: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.inclusive__text1 {
+    width: 528px;
+}
+
+.inclusive__text3 {
+    margin-top: 14px;
+}
+
+.inclusive__subtitle {
+    color:#999999;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .9px;
+}
+
+.inclusive__subtext {
+    margin-top: 25px;
+    width: 260px;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 56px;
+}
+
+.inclusive__slider {
+    height: 300px;
+    margin-top: -93px;
+    margin-left: 20px;
+}
+
+.inclusive__slide1 {
+    margin-left: 140px;
+    margin-top: 110px;
+}
+
+.inclusive__slide2 {
+    margin-left: 260px;
+    margin-top: 104px;
+}
+
+.inclusive__slide3 {
+    position: relative;
+    top: 6px;
+    left: -40px;
+}
+
+.inclusive__link {
+    color: #AB955E;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 24px;
+    letter-spacing: .6px;
+}
+
+.inclusive__svg {
+    margin-left: 7px;
+    margin-bottom: 3px;
+}

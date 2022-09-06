@@ -2,10 +2,15 @@
 @import "_fonts";
 @import "_reset";
 
+body {
+    background: url(../img/Intersect.png) top 612px right/633px 312px no-repeat,
+                url(../img/flower.png) top right/63% 219% no-repeat,
+                url(../img/flower_stroke.png) top right/66.3% 216% no-repeat;
+}
+
 a, p, h2, button {
     color: $gray;
     font-family: EuclidB;
-    text-transform: uppercase;
     tab-size: 14px;
 }
 
@@ -33,13 +38,12 @@ h1 {
     color: $white;
     text-transform: inherit
 }
-
-
 @import "_header";
 @import "_mria";
 @import "_choice";
 @import "_slider-sales";
 @import "_spa";
-
+@import "_inclusive";
 @import "_tablet";
+@import "_header-open";
 

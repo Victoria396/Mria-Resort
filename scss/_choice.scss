@@ -1,12 +1,10 @@
-@import "_var";
-
 .choice__title {
     font-family: "SangKung";
     font-weight: 700;
     font-size: 45px;
     line-height: 57px;
     text-transform: inherit;
-    margin-top: -68px;
+    margin-top: 69px;
     letter-spacing: 1px;
 }
 
@@ -112,6 +110,7 @@
     margin-right: 42px;
     margin-left: -5px;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .choice__tab-item-active {
