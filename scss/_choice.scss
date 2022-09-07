@@ -4,7 +4,7 @@
     font-size: 45px;
     line-height: 57px;
     text-transform: inherit;
-    margin-top: 69px;
+    margin-top: 85px;
     letter-spacing: 1px;
 }
 
@@ -137,5 +137,11 @@
 .choice__hr {
     margin-top: -30px;
     opacity: .3;
+}
+
+.choice__slider1,
+.choice__slider2,
+.choice__slider3 {
+    margin-top: 0px !important;
 }
 

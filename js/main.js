@@ -55,21 +55,77 @@ function choiceOnTabClick(item) {
 
 document.querySelector('.choice__tab-item').click();
 
-// код для меню
+// код для открытия и закрытия меню
 const menuOpen = document.querySelector(".header__menu");
 const menuClose = document.querySelector(".header__menu-close");
 const menu = document.querySelector(".menu__popup");
-const header = document.querySelector(".header__wrp")
+const header = document.querySelector("header");
+const main = document.querySelector("main");
 
 menuOpen.addEventListener("click", function(){
-    menu.classList.add('menu__popup-active');
-    header.classList.add('header-active');
-    menu.classList.remove('menu__popup')
+    main.classList.add('main-active');
+
+    if (!menuOpen.classList.contains('menu__popup-active')) {
+        header.classList.add('header-active');
+        menu.classList.add('menu__popup-active');
+        menu.classList.remove('menu__popup');
+        
+    }else {
+        header.classList.remove('header-active');
+        menu.classList.add('menu__popup');
+        menu.classList.remove('menu__popup-active');
+        
+    }
 });
 
 menuClose.addEventListener("click", function(){
     menu.classList.add('menu__popup');
     menu.classList.remove('menu__popup-active')
     header.classList.remove('header-active');
-
+    main.classList.remove('main-active');
 });
+
+// код для слайдера в меню 
+let offset = 0;
+const sliderLine = document.querySelector('.menu__popup-slider')
+
+document.querySelector('.menu__popup-slider-dots1')
+    .addEventListener('click', function() {
+        sliderLine.style.right = offset + 0 + 'px';
+    })
+document.querySelector('.menu__popup-slider-dots2')
+    .addEventListener('click', function() {
+        sliderLine.style.right = offset + 420 + 'px';
+    })
+document.querySelector('.menu__popup-slider-dots3')
+    .addEventListener('click', function() {
+        sliderLine.style.right = offset + 840 + 'px';
+    })
+
+// код для меню и подменю 
+const itemLevel1 = document.querySelectorAll(".menu__popup-level1");
+const itemLevel2 = document.querySelectorAll(".menu__popup-list2");
+
+
+itemLevel1.forEach(function(item) {
+    item.addEventListener("click", function() {
+        let btnLevel = item;
+        let levelID = btnLevel.getAttribute("data-level1");
+        let tabLevel = document.querySelector(levelID);
+
+        if(!btnLevel.classList.contains("menu__popup-level1-active")) {
+            itemLevel1.forEach(function(btnLevel) {
+            btnLevel.classList.remove("menu__popup-level1-active");
+        });
+
+        itemLevel2.forEach(function(btnLevel) {
+            btnLevel.classList.remove("menu__popup-list2-active");
+        });
+
+        btnLevel.classList.add("menu__popup-level1-active");
+        tabLevel.classList.add("menu__popup-list2-active")
+        }
+    });
+});
+
+document.querySelector(".menu__popup-level1:nth-child(2)").click();
