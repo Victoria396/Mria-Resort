@@ -1,4 +1,5 @@
 // слайдер для табов
+// спецпредложения и афиша
 const slickPreset = {
     infinite: true,
     slidesToShow: 2,
@@ -8,22 +9,43 @@ const slickPreset = {
     nextArrow: "<img src='../img/next.png' class='next' alt='right'>",
 }
 
-// слайдер для раздела всё включено
-const slickInclusive = {
+// категории отдыха
+const slickPreset2 = {
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     arrows: true,
-    prevArrow: "<img src='../img/arrows-inclusive-l.png' class='prev' alt='left'>",
-    nextArrow: "<img src='../img/arrows-inclusive-r.png' class='next' alt='right'>",
+    prevArrow: "<img src='../img/prev.png' class='prev' alt='left'>",
+    nextArrow: "<img src='../img/next.png' class='next' alt='right'>",
 }
+// слайдер для раздела всё включено
+// const slickInclusive = {
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     arrows: true,
+//     prevArrow: "<img src='../img/arrows-inclusive-l.png' class='prev' alt='left'>",
+//     nextArrow: "<img src='../img/arrows-inclusive-r.png' class='next' alt='right'>",
+// }
+
+const sliderInclusive = document.querySelector('.inclusive__slider-line');
+
+document.querySelector('.inclusive__right')
+    .addEventListener('click', function() {
+        sliderInclusive.style = 'left: -1309px; position: relative; transition: all ease 1s';
+    });
+
+document.querySelector('.inclusive__left')
+    .addEventListener('click', function() {
+        sliderInclusive.style = 'left: 0; position: relative; transition: all ease 1s';
+    });
 
 // слик слайдер
 $(document).ready(function(){
     $('.choice__slider1').slick(slickPreset);
     $('.choice__slider2').slick(slickPreset);
-    $('.choice__slider3').slick(slickPreset);
-    $('.inclusive__slider').slick(slickInclusive);
+    $('.choice__slider3').slick(slickPreset2);
+
 });
 
 // код для переключения табов
@@ -55,21 +77,77 @@ function choiceOnTabClick(item) {
 
 document.querySelector('.choice__tab-item').click();
 
-// код для меню
+// код для открытия и закрытия меню
 const menuOpen = document.querySelector(".header__menu");
 const menuClose = document.querySelector(".header__menu-close");
 const menu = document.querySelector(".menu__popup");
-const header = document.querySelector(".header__wrp")
+const header = document.querySelector("header");
+const main = document.querySelector("main");
 
 menuOpen.addEventListener("click", function(){
-    menu.classList.add('menu__popup-active');
-    header.classList.add('header-active');
-    menu.classList.remove('menu__popup')
+    main.classList.add('main-active');
+
+    if (!menuOpen.classList.contains('menu__popup-active')) {
+        header.classList.add('header-active');
+        menu.classList.add('menu__popup-active');
+        menu.classList.remove('menu__popup');
+        
+    }else {
+        header.classList.remove('header-active');
+        menu.classList.add('menu__popup');
+        menu.classList.remove('menu__popup-active');
+        
+    }
 });
 
 menuClose.addEventListener("click", function(){
     menu.classList.add('menu__popup');
     menu.classList.remove('menu__popup-active')
     header.classList.remove('header-active');
-
+    main.classList.remove('main-active');
 });
+
+// код для слайдера в меню 
+let offset = 0;
+const sliderLine = document.querySelector('.menu__popup-slider')
+
+document.querySelector('.menu__popup-slider-dots1')
+    .addEventListener('click', function() {
+        sliderLine.style.right = offset + 0 + 'px';
+    })
+document.querySelector('.menu__popup-slider-dots2')
+    .addEventListener('click', function() {
+        sliderLine.style.right = offset + 420 + 'px';
+    })
+document.querySelector('.menu__popup-slider-dots3')
+    .addEventListener('click', function() {
+        sliderLine.style.right = offset + 840 + 'px';
+    })
+
+// код для меню и подменю 
+const itemLevel1 = document.querySelectorAll(".menu__popup-level1");
+const itemLevel2 = document.querySelectorAll(".menu__popup-list2");
+
+
+itemLevel1.forEach(function(item) {
+    item.addEventListener("click", function() {
+        let btnLevel = item;
+        let levelID = btnLevel.getAttribute("data-level1");
+        let tabLevel = document.querySelector(levelID);
+
+        if(!btnLevel.classList.contains("menu__popup-level1-active")) {
+            itemLevel1.forEach(function(btnLevel) {
+            btnLevel.classList.remove("menu__popup-level1-active");
+        });
+
+        itemLevel2.forEach(function(btnLevel) {
+            btnLevel.classList.remove("menu__popup-list2-active");
+        });
+
+        btnLevel.classList.add("menu__popup-level1-active");
+        tabLevel.classList.add("menu__popup-list2-active")
+        }
+    });
+});
+
+document.querySelector(".menu__popup-level1:nth-child(2)").click();
