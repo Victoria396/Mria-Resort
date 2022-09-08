@@ -1,4 +1,5 @@
 // слайдер для табов
+// спецпредложения и афиша
 const slickPreset = {
     infinite: true,
     slidesToShow: 2,
@@ -8,22 +9,43 @@ const slickPreset = {
     nextArrow: "<img src='../img/next.png' class='next' alt='right'>",
 }
 
-// слайдер для раздела всё включено
-const slickInclusive = {
+// категории отдыха
+const slickPreset2 = {
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     arrows: true,
-    prevArrow: "<img src='../img/arrows-inclusive-l.png' class='prev' alt='left'>",
-    nextArrow: "<img src='../img/arrows-inclusive-r.png' class='next' alt='right'>",
+    prevArrow: "<img src='../img/prev.png' class='prev' alt='left'>",
+    nextArrow: "<img src='../img/next.png' class='next' alt='right'>",
 }
+// слайдер для раздела всё включено
+// const slickInclusive = {
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3,
+//     arrows: true,
+//     prevArrow: "<img src='../img/arrows-inclusive-l.png' class='prev' alt='left'>",
+//     nextArrow: "<img src='../img/arrows-inclusive-r.png' class='next' alt='right'>",
+// }
+
+const sliderInclusive = document.querySelector('.inclusive__slider-line');
+
+document.querySelector('.inclusive__right')
+    .addEventListener('click', function() {
+        sliderInclusive.style = 'left: -1309px; position: relative; transition: all ease 1s';
+    });
+
+document.querySelector('.inclusive__left')
+    .addEventListener('click', function() {
+        sliderInclusive.style = 'left: 0; position: relative; transition: all ease 1s';
+    });
 
 // слик слайдер
 $(document).ready(function(){
     $('.choice__slider1').slick(slickPreset);
     $('.choice__slider2').slick(slickPreset);
-    $('.choice__slider3').slick(slickPreset);
-    $('.inclusive__slider').slick(slickInclusive);
+    $('.choice__slider3').slick(slickPreset2);
+
 });
 
 // код для переключения табов
