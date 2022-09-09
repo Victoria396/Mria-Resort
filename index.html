@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
@@ -12,6 +12,9 @@
 <body>
 <header>
     <div class="header__wrp conteiner">
+        <div class="menu__popup-leng">
+            <p class="menu__popup-leng-ru">RU</p>
+        </div>
         <nav>
             <div class="header__menu">
                 <svg class="header__menu-open" width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,6 +42,7 @@
                 <img class="header__logo" src="img/logo.png" alt="logo">
             </a>
             <img class="header__stars" src="img/stars.jpg" alt="stars">
+            <img class="header__keyMobile" src="img/keyMobile.jpg" alt="key">
         </div>
         <ul class="header__leng">
             <li>
@@ -51,7 +55,9 @@
         <ul class="header__list-entry">
             <li>
                 <a href="#">
-                    <img class="header__list-entry-img" src="img/key.png" alt="key">
+                    <svg class="header__list-entry-img" width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.87398 5C7.42994 6.72523 5.86384 8 4 8C1.79086 8 0 6.20914 0 4C0 1.79086 1.79086 0 4 0C5.86384 0 7.42994 1.27477 7.87398 3H11V1H14V3H15V5L7.87398 5ZM4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" fill="white"/>
+                    </svg>
                 </a>
             </li>
             <li>
@@ -88,6 +94,9 @@
             <li class="menu__popup-level1" data-level1="#menuItem_12">Транспорт</li>
             <li class="menu__popup-level1" data-level1="#menuItem_13">Спорт</li>
         </ul>
+        <div>
+            <button class="menu__popup-btn">Найти&nbsp;номер</button>
+        </div>
         <ul class="menu__popup-list2" id="menuItem_1">
             <li class="menu__popup-level2">
                 <a href="#">
@@ -330,6 +339,64 @@
                 <p class="menu__popup-info">info@mriyaresort.com</p>
             </div>
         </div>
+        <div class="menu__open-list-mob-wrp">
+            <ul class="menu__open-list-mob">
+                <li class="menu__open-item-mob">
+                    <a href="#">О комплексе</a>
+                </li>
+                <li class="menu__open-item-mob">
+                    <a href="#">Блог</a>
+                </li>
+                <li class="menu__open-item-mob">
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+            <ul class="menu__open-list-mob">
+                <li class="menu__open-item-mob">
+                    <a href="#">Афиша</a>
+                </li>
+                <li class="menu__open-item-mob">
+                    <a href="#">Спецпредложения</a>
+                </li>
+            </ul>    
+            <ul class="menu__open-list-mob">
+                <li class="menu__open-item-mob">
+                    <a href="#">Важная информация</a>
+                </li>
+                <li class="menu__open-item-mob">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu__open-number-mob">
+            <p>8 800 500 6847</p>
+        </div>
+        <div class="menu__open-info-mob-wrp">
+            <p class="menu__open-info-mob">info@mriyaresort.com</p>
+        </div>
+        <div class="menu__open-social-mob">
+            <ul class="menu__open-social-mob-list">
+                <li class="menu__open-social-mob-item">
+                    <svg class="menu__open-social-mob-item-svg" width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.6688 10H7V18H3V10H0V7H3V4.53906C3 3.60156 3 2.5 4 1.5C5 0.5 6.37591 0 8.18796 0C10 0 11.5 0.5 11.5 0.5L10 3.5C10 3.5 8 3 7.5 3.5C7 4 7 4.26562 7 4.75781V7H10.5L9.6688 10Z"/>
+                        <path d="M9.6688 10H7V18H3V10H0V7H3V4.53906C3 3.60156 3 2.5 4 1.5C5 0.5 6.37591 0 8.18796 0C10 0 11.5 0.5 11.5 0.5L10 3.5C10 3.5 8 3 7.5 3.5C7 4 7 4.26562 7 4.75781V7H10.5L9.6688 10Z"/>
+                    </svg>
+                </li>
+                <li class="menu__open-social-mob-item">
+                    <svg class="menu__open-social-mob-item-svg" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.1367 3.8125C16.1602 3.90385 16.1719 4.05228 16.1719 4.25781C16.1719 5.46815 15.9375 6.67849 15.4688 7.88882C15 9.07632 14.332 10.1725 13.4648 11.1773C12.6211 12.1593 11.5195 12.9585 10.1602 13.5751C8.80078 14.1917 7.30078 14.5 5.66016 14.5C3.59766 14.5 1.71094 13.9633 0 12.89C0.257812 12.9129 0.550781 12.9243 0.878906 12.9243C2.58984 12.9243 4.125 12.4105 5.48438 11.3828C4.66406 11.3828 3.9375 11.1544 3.30469 10.6977C2.69531 10.2181 2.27344 9.6244 2.03906 8.91647C2.27344 8.9393 2.49609 8.95072 2.70703 8.95072C3.03516 8.95072 3.36328 8.91647 3.69141 8.84796C3.12891 8.73377 2.625 8.50541 2.17969 8.16286C1.73438 7.82031 1.38281 7.40926 1.125 6.92969C0.867187 6.42728 0.738281 5.89062 0.738281 5.31971V5.2512C1.25391 5.54808 1.80469 5.70793 2.39062 5.73077C1.28906 5 0.738281 3.99519 0.738281 2.71635C0.738281 2.07692 0.914062 1.47175 1.26562 0.900841C2.17969 2.01983 3.29297 2.91046 4.60547 3.57272C5.94141 4.23498 7.35938 4.60036 8.85938 4.66887C8.8125 4.39483 8.78906 4.12079 8.78906 3.84675C8.78906 2.86478 9.14062 2.01983 9.84375 1.3119C10.5703 0.603966 11.4375 0.25 12.4453 0.25C13.5234 0.25 14.4258 0.626803 15.1523 1.38041C15.9961 1.22055 16.7812 0.935096 17.5078 0.524038C17.2266 1.36899 16.6875 2.03125 15.8906 2.51082C16.5938 2.41947 17.2969 2.22536 18 1.92849C17.4844 2.65925 16.8633 3.28726 16.1367 3.8125Z"/>
+                    </svg>
+                </li>
+                <li class="menu__open-social-mob-item">
+                    <svg class="menu__open-social-mob-item-svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.9598 5.30357C17.9866 6.02679 18 7.25893 18 9C18 10.7411 17.9866 11.9732 17.9598 12.6964C17.8795 14.3304 17.3839 15.6027 16.4732 16.5134C15.5893 17.3973 14.3304 17.8661 12.6964 17.9196C11.9732 17.9732 10.7411 18 9 18C7.25893 18 6.02679 17.9732 5.30357 17.9196C3.66964 17.8393 2.41071 17.3571 1.52679 16.4732C1.17857 16.1518 0.897321 15.7768 0.683036 15.3482C0.46875 14.9196 0.308036 14.5045 0.200893 14.1027C0.120536 13.7009 0.0803571 13.2321 0.0803571 12.6964C0.0267857 11.9732 0 10.7411 0 9C0 7.25893 0.0267857 6.01339 0.0803571 5.26339C0.160714 3.65625 0.642857 2.41071 1.52679 1.52679C2.41071 0.616072 3.66964 0.120536 5.30357 0.0401786C6.02679 0.0133929 7.25893 0 9 0C10.7411 0 11.9732 0.0133929 12.6964 0.0401786C14.3304 0.120536 15.5893 0.616072 16.4732 1.52679C17.3839 2.41071 17.8795 3.66964 17.9598 5.30357ZM15.6384 14.3036C15.7187 14.0893 15.7857 13.8214 15.8393 13.5C15.8929 13.1518 15.933 12.75 15.9598 12.2946C15.9866 11.8125 16 11.4241 16 11.1295C16 10.8348 16 10.4196 16 9.88393C16 9.34822 16 9.05357 16 9C16 8.91964 16 8.625 16 8.11607C16 7.58036 16 7.16518 16 6.87054C16 6.57589 15.9866 6.20089 15.9598 5.74554C15.933 5.26339 15.8929 4.86161 15.8393 4.54018C15.7857 4.19196 15.7187 3.91071 15.6384 3.69643C15.317 2.86607 15.1339 2.68304 14.3036 2.36161C14.0893 2.28125 13.808 2.21429 13.4598 2.16071C13.1384 2.10714 12.7366 2.06696 12.2545 2.04018C11.7991 2.01339 11.4241 2 11.1295 2C10.8616 2 10.4464 2 9.88393 2C9.34822 2 9.05357 2 9 2C8.94643 2 8.65179 2 8.11607 2C7.58036 2 7.16518 2 6.87054 2C6.57589 2 6.1875 2.01339 5.70536 2.04018C5.25 2.06696 4.84821 2.10714 4.5 2.16071C4.17857 2.21429 3.91071 2.28125 3.69643 2.36161C2.86607 2.68304 2.68304 2.86607 2.36161 3.69643C2.28125 3.91071 2.21429 4.19196 2.16071 4.54018C2.10714 4.86161 2.06696 5.26339 2.04018 5.74554C2.01339 6.20089 2 6.57589 2 6.87054C2 7.13839 2 7.55357 2 8.11607C2 8.65179 2 8.94643 2 9C2 9.10714 2 9.36161 2 9.76339C2 10.1384 2 10.4598 2 10.7277C2 10.9688 2 11.2902 2 11.692C2.02679 12.0938 2.05357 12.442 2.08036 12.7366C2.10714 13.0045 2.14732 13.2857 2.20089 13.5804C2.25446 13.875 2.30804 14.1161 2.36161 14.3036C2.70982 15.1339 2.89286 15.317 3.69643 15.6384C3.91071 15.7187 4.17857 15.7857 4.5 15.8393C4.84821 15.8929 5.25 15.933 5.70536 15.9598C6.1875 15.9866 6.5625 16 6.83036 16C7.125 16 7.54018 16 8.07589 16C8.63839 16 8.94643 16 9 16C9.08036 16 9.375 16 9.88393 16C10.4196 16 10.8348 16 11.1295 16C11.4241 16 11.7991 15.9866 12.2545 15.9598C12.7366 15.933 13.1384 15.8929 13.4598 15.8393C13.808 15.7857 14.0893 15.7187 14.3036 15.6384C15.1339 15.2902 15.317 15.1071 15.6384 14.3036Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 12C10.6569 12 12 10.6569 12 9C12 7.34315 10.6569 6 9 6C7.34315 6 6 7.34315 6 9C6 10.6569 7.34315 12 9 12ZM9 14C11.7614 14 14 11.7614 14 9C14 6.23858 11.7614 4 9 4C6.23858 4 4 6.23858 4 9C4 11.7614 6.23858 14 9 14Z"/>
+                        <path d="M15 4C15 4.55228 14.5523 5 14 5C13.4477 5 13 4.55228 13 4C13 3.44772 13.4477 3 14 3C14.5523 3 15 3.44772 15 4Z" fill="#1C1C1C"/>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+
     </div>
 </header>
 <main>
@@ -341,10 +408,10 @@
             <p class="mria__under-text">Family & Health Club</p>
             <h1 class="mria__title">Mriya</h1>
             <h1 class="mria__title mria__title2">Resort</h1>
-            <h2 class="mria__sub-title">Российский курорт для всей семьи<br>на берегу черного моря</h2>
+            <h2 class="mria__sub-title">Российский курорт для всей семьи на берегу черного моря</h2>
             <div class="mria__btn">
-                <button class="mria__btn-room mria__btn-style">Найти номер</button>
-                <button class="mria__btn-3d mria__btn-style">3D тур</button>
+                <button class="mria__btn-room mria__btn-style">Найти&nbsp;номер</button>
+                <button class="mria__btn-3d mria__btn-style">3D&nbsp;тур</button>
             </div>
             <div class="mria__line">
                 <img src="img/line-gold.png" alt="line">
@@ -354,6 +421,10 @@
                     <img src="img/arrows.png" alt="arrow">
                 </a>
             </div>
+        </div>
+        <div class="mria__flower-bkgMob">
+            <img src="img/flowerMob.jpg" alt="">
+            <img class="mria__flower-strokeMob" src="img/flower_strokeMobile.png" alt="">
         </div>
         <div class="mria__bkg-img">
             <div class="mria__social">
@@ -458,27 +529,27 @@
             </nav>
             <hr class="choice__hr">
             <div class="choice__tab-body">
-                <div class="choice__tab-body-item choice__tab-body-active choice__slider1" id="tab_1">
+                <div class="choice__tab-body-item choice__slider1" id="tab_1">
                     <div class="marginRight1">
-                        <img src="img/choice-slider1.jpg" alt="slider">
+                        <img class="choice__tab-body-item-img" src="img/choice-slider1.jpg" alt="slider">
                         <h4 class="tab-text-title">-20%</h4>
                         <p class="tab-text-subtitle">Для тех кто<br>рядом</p>
                         <img class="choice__tab-body-item-bkg" src="img/choice-slider-bkg1.png" alt="">
                     </div>
                     <div class="marginRight2">
-                        <img src="img/choice-slider2.jpg" alt="slider">
+                        <img class="choice__tab-body-item-img" src="img/choice-slider2.jpg" alt="slider">
                         <h4 class="tab-text-title">-10%</h4>
                         <p class="tab-text-subtitle">Раннее<br>бронирование</p>
                         <img class="choice__tab-body-item-bkg" src="img/choice-slider-bkg1.png" alt="">
                     </div>
                     <div class="marginRight1">
-                        <img src="img/choice-slider1.jpg" alt="slider">
+                        <img class="choice__tab-body-item-img" src="img/choice-slider1.jpg" alt="slider">
                         <h4 class="tab-text-title">-20%</h4>
                         <p class="tab-text-subtitle">Для тех кто<br>рядом</p>
                         <img class="choice__tab-body-item-bkg" src="img/choice-slider-bkg1.png" alt="">
                     </div>
                     <div class="marginRight2">
-                        <img src="img/choice-slider2.jpg" alt="slider">
+                        <img class="choice__tab-body-item-img" src="img/choice-slider2.jpg" alt="slider">
                         <h4 class="tab-text-title">-10%</h4>
                         <p class="tab-text-subtitle">Раннее<br>бронирование</p>
                         <img class="choice__tab-body-item-bkg" src="img/choice-slider-bkg1.png" alt="">
@@ -486,25 +557,25 @@
                 </div>
                 <div class="choice__tab-body-item choice__slider2" id="tab_2">
                     <div class="marginRight3">
-                        <img src="img/choice-slider1.jpg" alt="slider">
+                        <img class="choice__tab-body-item-img" src="img/choice-slider1.jpg" alt="slider">
                         <h4 class="tab-text-title">-20%</h4>
                         <p class="tab-text-subtitle">Для тех кто<br>рядом</p>
                         <img class="choice__tab-body-item-bkg" src="img/choice-slider-bkg1.png" alt="">
                     </div>
                     <div class="marginRight4">
-                        <img src="img/choice-slider2.jpg" alt="slider">
+                        <img class="choice__tab-body-item-img" src="img/choice-slider2.jpg" alt="slider">
                         <h4 class="tab-text-title">-10%</h4>
                         <p class="tab-text-subtitle">Раннее<br>бронирование</p>
                         <img class="choice__tab-body-item-bkg" src="img/choice-slider-bkg1.png" alt="">
                     </div>
                     <div class="marginRight3">
-                        <img src="img/choice-slider1.jpg" alt="slider">
+                        <img class="choice__tab-body-item-img" src="img/choice-slider1.jpg" alt="slider">
                         <h4 class="tab-text-title">-20%</h4>
                         <p class="tab-text-subtitle">Для тех кто<br>рядом</p>
                         <img class="choice__tab-body-item-bkg" src="img/choice-slider-bkg1.png" alt="">
                     </div>
                     <div class="marginRight4">
-                        <img src="img/choice-slider2.jpg" alt="slider">
+                        <img class="choice__tab-body-item-img" src="img/choice-slider2.jpg" alt="slider">
                         <h4 class="tab-text-title">-10%</h4>
                         <p class="tab-text-subtitle">Раннее<br>бронирование</p>
                         <img class="choice__tab-body-item-bkg" src="img/choice-slider-bkg1.png" alt="">
@@ -513,56 +584,56 @@
                 <div class="choice__slider3-overfl">
                     <div class="choice__tab-body-item choice__slider3" id="tab_3">
                         <div>
-                            <img class="choice__tab-body-item-pic2" src="img/rest1.jpg" alt="pic">
+                            <img class="choice__tab-body-item-pic2 choice__tab-body-item-img" src="img/rest1.jpg" alt="pic">
                             <img class="choice__tab-body-item-bkg2" src="img/choice-slider-bkg2.png" alt="">
                             <div class="choice__tab-body-item-text">
                                 <p class="tab-text-subtitle">Семейный&nbsp;отдых</p>
                             </div>
                         </div>
                         <div>
-                            <img class="choice__tab-body-item-pic2" src="img/rest2.jpg" alt="pic">
+                            <img class="choice__tab-body-item-pic2 choice__tab-body-item-img" src="img/rest2.jpg" alt="pic">
                             <img class="choice__tab-body-item-bkg2" src="img/choice-slider-bkg2.png" alt="">
                             <div class="choice__tab-body-item-text">
                                 <p class="tab-text-subtitle">Оздоровление</p>
                             </div>
                         </div>
                         <div>
-                            <img class="choice__tab-body-item-pic2" src="img/rest3.jpg" alt="pic">
+                            <img class="choice__tab-body-item-pic2 choice__tab-body-item-img" src="img/rest3.jpg" alt="pic">
                             <img class="choice__tab-body-item-bkg2" src="img/choice-slider-bkg2.png" alt="">
                             <div class="choice__tab-body-item-text">
                                 <p class="tab-text-subtitle">Релакс&nbsp;и&nbsp;красота</p>
                             </div>
                         </div>
                         <div>
-                            <img class="choice__tab-body-item-pic2" src="img/rest4.jpg" alt="pic">
+                            <img class="choice__tab-body-item-pic2 choice__tab-body-item-img" src="img/rest4.jpg" alt="pic">
                             <img class="choice__tab-body-item-bkg2" src="img/choice-slider-bkg2.png" alt="">
                             <div class="choice__tab-body-item-text">
                                 <p class="tab-text-subtitle">Новые&nbsp;впечатления</p>
                             </div>
                         </div>
                         <div>
-                            <img class="choice__tab-body-item-pic2" src="img/rest1.jpg" alt="pic">
+                            <img class="choice__tab-body-item-pic2 choice__tab-body-item-img" src="img/rest1.jpg" alt="pic">
                             <img class="choice__tab-body-item-bkg2" src="img/choice-slider-bkg2.png" alt="">
                             <div class="choice__tab-body-item-text">
                                 <p class="tab-text-subtitle">Семейный&nbsp;отдых</p>
                             </div>
                         </div>
                         <div>
-                            <img class="choice__tab-body-item-pic2" src="img/rest2.jpg" alt="pic">
+                            <img class="choice__tab-body-item-pic2 choice__tab-body-item-img" src="img/rest2.jpg" alt="pic">
                             <img class="choice__tab-body-item-bkg2" src="img/choice-slider-bkg2.png" alt="">
                             <div class="choice__tab-body-item-text">
                                 <p class="tab-text-subtitle">Оздоровление</p>
                             </div>
                         </div>
                         <div>
-                            <img class="choice__tab-body-item-pic2" src="img/rest3.jpg" alt="pic">
+                            <img class="choice__tab-body-item-pic2 choice__tab-body-item-img" src="img/rest3.jpg" alt="pic">
                             <img class="choice__tab-body-item-bkg2" src="img/choice-slider-bkg2.png" alt="">
                             <div class="choice__tab-body-item-text">
                                 <p class="tab-text-subtitle">Релакс&nbsp;и&nbsp;красота</p>
                             </div>
                         </div>
                         <div>
-                            <img class="choice__tab-body-item-pic2" src="img/rest4.jpg" alt="pic">
+                            <img class="choice__tab-body-item-pic2 choice__tab-body-item-img" src="img/rest4.jpg" alt="pic">
                             <img class="choice__tab-body-item-bkg2" src="img/choice-slider-bkg2.png" alt="">
                             <div class="choice__tab-body-item-text">
                                 <p class="tab-text-subtitle">Новые&nbsp;впечатления</p>
@@ -591,10 +662,13 @@
             </div>
         </div>
     </section>
+    <div>
+        <img class="spa__bkg1Mob" src="img/spa-bkg-right.png" alt="">
+    </div>
     <section class="inclusive">
         <h2 class="inclusive__title">Все включено</h2>
-        <div class="inclusive__slider-overf">
-            <div class="inclusive__slider-line">
+        <div id="slider" class="inclusive__slider-overf">
+            <div id="items" class="inclusive__slider-line">
                 <div class="inclusive__slider1">
                     <div class="inclusive__slide1">
                         <img class="inclusive__img" src="img/inclusive-slide1.jpg" alt="slide">
@@ -654,8 +728,8 @@
             </div>
         </div>
         <div class="inclusive__arrows">
-            <img class="inclusive__left" src="img/arrows-inclusive-l.png" alt="left">
-            <img class="inclusive__right" src="img/arrows-inclusive-r.png" alt="right">
+            <img id="prev" class="inclusive__left" src="img/arrows-inclusive-l.png" alt="left">
+            <img id="next" class="inclusive__right" src="img/arrows-inclusive-r.png" alt="right">
         </div>
     </section>
     <section class="tablet">
@@ -667,8 +741,11 @@
         <div class="tablet__logo">
             <img src="img/logo.png" alt="logo">
         </div>
+        <div>
+            <img class="spa__bkg2Mob" src="img/spa-bkg-left.png" alt="">
+        </div>
     </section>
-</main>
+</main> 
     <script src="libs/jquery.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>

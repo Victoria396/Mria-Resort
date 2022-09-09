@@ -67,7 +67,7 @@
 .choice__slider1,
 .choice__slider2,
 .choice__slider3 {
-    margin-top: 0px !important;
+    margin-top: 0 !important;
 }
 
 .choice__tab-body-item-bkg2 {
@@ -91,4 +91,43 @@
     margin-left: 0px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .choice__tab-body {
+        width: 640px;
+    }
+    .choice__tab-body-item-bkg2{
+        position: relative;
+        top: -74px;
+    }
 
+    .choice__tab-body-item-text {
+        margin-top: -133px;
+    }
+
+    .choice__tab-body-item-img {
+        width: 328px;
+        height: 232px;
+        margin-top: 20px;
+    }
+
+    .choice__tab-body-item-bkg2 {
+        width: 328px;
+        margin-top: 10px;
+    }
+
+    .marginRight1,
+    .marginRight2,
+    .marginRight3,
+    .marginRight4,
+    .marginRight5,
+    .marginRight6 {
+        margin-right: 0;
+    }
+
+    .choice__tab-body-item-pic2 {
+        margin-top: 20px;
+    }
+
+
+
+}

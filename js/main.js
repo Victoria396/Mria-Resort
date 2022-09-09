@@ -1,22 +1,106 @@
 // слайдер для табов
 // спецпредложения и афиша
-const slickPreset = {
+const slickPreset1 = {
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 2,
     arrows: true,
     prevArrow: "<img src='../img/prev.png' class='prev' alt='left'>",
     nextArrow: "<img src='../img/next.png' class='next' alt='right'>",
+    responsive: [{
+        breakpoint: 321,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        rows: 2,
+        },
+        breakpoint: 361,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        rows: 2,
+        },
+        breakpoint: 481,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        },
+    }]
+}
+
+const slickPreset2 = {
+    infinite: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    arrows: true,
+    prevArrow: "<img src='../img/prev.png' class='prev' alt='left'>",
+    nextArrow: "<img src='../img/next.png' class='next' alt='right'>",
+        responsive: [{
+        breakpoint: 321,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        rows: 2,
+        },
+        breakpoint: 361,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        rows: 2,
+        },
+        breakpoint: 481,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        },
+    }]
 }
 
 // категории отдыха
-const slickPreset2 = {
+const slickPreset3 = {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     prevArrow: "<img src='../img/prev.png' class='prev' alt='left'>",
     nextArrow: "<img src='../img/next.png' class='next' alt='right'>",
+        responsive: [{
+        breakpoint: 321,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        rows: 2,
+        },
+        breakpoint: 361,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        rows: 2,
+        },
+        breakpoint: 481,
+        settings: {
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        },
+    }]
 }
 // слайдер для раздела всё включено
 // const slickInclusive = {
@@ -40,11 +124,12 @@ document.querySelector('.inclusive__left')
         sliderInclusive.style = 'left: 0; position: relative; transition: all ease 1s';
     });
 
+
 // слик слайдер
 $(document).ready(function(){
-    $('.choice__slider1').slick(slickPreset);
-    $('.choice__slider2').slick(slickPreset);
-    $('.choice__slider3').slick(slickPreset2);
+    $('.choice__slider1').slick(slickPreset1);
+    $('.choice__slider2').slick(slickPreset2);
+    $('.choice__slider3').slick(slickPreset3);
 
 });
 
@@ -151,3 +236,4 @@ itemLevel1.forEach(function(item) {
 });
 
 document.querySelector(".menu__popup-level1:nth-child(2)").click();
+

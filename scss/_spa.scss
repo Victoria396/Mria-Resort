@@ -1,3 +1,7 @@
+.spa {
+    margin-top: 0;
+}
+
 .spa__bkg1 {
     background-position: left;
     width: 100%;
@@ -15,6 +19,10 @@
     background-image: url(../img/spa-bkg-right.png);
     background-repeat: no-repeat;
     position: relative;
+}
+
+.spa__bkg1Mob {
+    display: none;
 }
 
 .spa__wrp {
@@ -73,3 +81,70 @@
     text-transform: uppercase;
 }
 
+.spa__bkg2Mob {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .spa {
+        margin-top: -720px;
+    }
+
+    .spa__wrp {
+        top: 53%;
+    }
+
+    .spa__img {
+        margin-top: 40px;
+        margin-left: -54px;
+    }
+
+    .spa__title {
+        font-size: 27px;
+        line-height: 29px;
+        margin-top: 62px;
+        margin-left: -112px;
+    }
+
+    .spa__subtitle {
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: -139px;
+        margin-top: 4px;
+    }
+
+    .spa__pic svg {
+        width: 37px;
+        height: 24px;
+    }
+
+    .spa__pic {
+        margin-top: 25px;
+        margin-left: 2px;
+    }
+
+    .spa__text {
+        margin-top: 22px;
+        margin-left: -130px;
+        width: 300px;
+    }
+
+    .spa__btn {
+        margin-top: 7px;
+        margin-left: -82px;
+    }
+
+    .spa__bkg1,
+    .spa__bkg2 {
+        background-image: none;
+    }
+
+    .spa__bkg1Mob {
+        display: block;
+        width: 213px;
+        height: 345px;
+        margin-left: 130px;
+        margin-top: 421px;
+    }
+
+}
