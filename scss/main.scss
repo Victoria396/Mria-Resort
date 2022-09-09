@@ -3,21 +3,23 @@
 @import "_reset";
 
 body {
+    overflow-x: hidden;
     background: url(../img/Intersect.png) top 612px right/633px 312px no-repeat,
-                url(../img/flower.png) top right/63% 219% no-repeat,
-                url(../img/flower_stroke.png) top right/66.3% 216% no-repeat;
+                url(../img/Intersect-eff.png) top 590px right 177px/546px 361px no-repeat,
+                url(../img/flower.png) top right/910px 935px no-repeat,
+                url(../img/flower_stroke.png) top right/955px 922px no-repeat;
 }
 
-a, p, h2, button {
+a, p, h2, button, li {
     color: $gray;
     font-family: EuclidB;
     tab-size: 14px;
 }
 
 a, button {
-    cursor: pointer;
     &:hover {
         color: $gold;
+        cursor: pointer;
     }
 }
 
@@ -41,7 +43,7 @@ h1 {
 @import "_header";
 @import "_mria";
 @import "_choice";
-@import "_slider-sales";
+@import "_choice-slider";
 @import "_spa";
 @import "_inclusive";
 @import "_tablet";

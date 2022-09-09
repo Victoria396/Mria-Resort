@@ -1,5 +1,5 @@
 .tablet {
-    margin-top: 384px;
+    margin-top: -118px;
 }
 
 .tablet__tablet {
@@ -30,4 +30,34 @@
     margin-right: auto;
     margin-top: -40px;
     width: 66px;
+}
+
+.spa__bkg2Mob {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .tablet {
+        margin-left: -17px;
+        margin-top: -118px;
+        overflow: hidden;
+        width: 358px;
+        height: 750px;
+    }
+
+    .tablet__bkg {
+        display: none;
+    }
+
+    .tablet__logo {
+        margin-top: 478px;
+    }
+
+    .spa__bkg2Mob {
+        display: block;
+        width: 347px;
+        margin-left: 0px;
+        margin-top: -318px;
+        margin-right: auto;
+    }
 }

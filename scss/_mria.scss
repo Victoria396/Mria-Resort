@@ -60,18 +60,21 @@
 .mria__social {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 154px;
+    margin-right: -147px;
+    right: -619px;
 }
 
 .mria__social-item {
-    margin-right: 84px;
+    margin-right: 20px;
     margin-left: auto;
     margin-top: 49px;
-    width: 2%;
+    width: 20px;
     border-radius: 100%;
     padding: 14px;
     background-color: $white;
     &:hover {
+        cursor: pointer;
         background-color: $gold;
     }
 }
@@ -87,8 +90,8 @@
 }
 
 .mria__weather {
-    margin-top: 410px;
-    margin-right: 201px;
+    margin-top: 405px;
+    margin-left: 527px;
 }
 
 .mria__waves {
@@ -99,7 +102,9 @@
 .mria__under-text {
     margin-top: 24px;
     margin-left: 140px;
+    margin-right: auto;
     text-transform: uppercase;
+    width: 182px;
 }
 
 .mria__title {
@@ -118,15 +123,18 @@
     text-transform: inherit;
     margin-top: 41px;
     margin-left: 139px;
+    margin-right: auto;
     font-size: 24px;
     line-height: 30px;
-    width: 100%;
+    width: 411px;
 }
 
 .mria__btn {
     margin-top: 57px;
     margin-left: 140px;
-    width: 100%;
+    margin-right: auto;
+    width: 477px;
+    display: flex;
 }
 
 .mria__btn-style {
@@ -172,4 +180,84 @@
     padding: 22px 23px;
 }
 
+.mria__flower-bkgMob {
+    display: none;
+}
 
+@media (min-width: 320px) and (max-width: 480px) {
+    .mria {
+        overflow-x: hidden;
+        width: 360px;
+        position: relative;
+        top: 0;
+    }
+    .mria__line,
+    .mria__bkg-img {
+        display: none;
+    }
+
+    .mria__waves {
+        margin-top: 24px;
+        margin-left: -75px;
+    }
+
+    .mria__under-text {
+        margin-left: 15px;
+        margin-bottom: -12px;
+    }
+
+    .mria__title {
+        margin-left: 18px;
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .mria__sub-title {
+        margin-top: 25px;
+        margin-left: 16px;
+        margin-right: auto;
+        font-size: 24px;
+        line-height: 30px;
+        width: 328px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .mria__btn {
+        margin-top: 41px;
+        margin-left: 16px;
+        width: 330px;
+    }
+
+    .mria__btn-room {
+        padding: 15px 20px;
+        margin-right: 16px;
+    }
+
+    .mria__btn-3d {
+        padding: 18px 52px;
+    }
+
+    .mria__arrow {
+        margin-top: 50px;
+        margin-right: auto;
+        margin-left: 149px;
+        width: 14px;
+    }
+
+    .mria__flower-bkgMob {
+        display: block;
+        position: relative;
+        right: 0;
+        left: 37px;
+        top: -66px;
+        z-index: 0;
+    }
+
+    .mria__flower-strokeMob {
+        top: -408px;
+        position: relative;
+        left: -14px;
+    }
+}

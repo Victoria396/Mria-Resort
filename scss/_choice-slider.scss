@@ -1,0 +1,133 @@
+.prev {
+    position: relative;
+    top: -45px;
+    left: 1080px;
+}
+
+.next {
+    position: relative;
+    top: -292px;
+    left: 1136px;
+}
+
+.slick-slider {
+    margin-top: 14px;
+}
+
+.marginRight1 {
+    margin-right: -180px;
+}
+
+.marginRight2 {
+    margin-right: 180px;
+}
+
+.slick-slide {
+    position: relative;
+}
+
+.tab-text-title {
+    font-family: 'EuclidA';
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: -123px;
+    padding-left: 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.tab-text-subtitle {
+    color: $white;
+    text-transform: inherit;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 10px;
+    padding-left: 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.choice__tab-body-item-bkg {
+    margin-top: -152px;
+    z-index: 1;
+    position: relative;
+}
+
+.marginRight3 {
+    margin-right: -180px;
+}
+
+.marginRight4 {
+    margin-right: 180px;
+}
+
+.choice__slider1,
+.choice__slider2,
+.choice__slider3 {
+    margin-top: 0 !important;
+}
+
+.choice__tab-body-item-bkg2 {
+    position: absolute;
+    top: 160px;
+}
+
+.choice__tab-body-item-text {
+    position: absolute;
+    position: absolute;
+    margin-top: -66px;
+}
+
+.marginRight6 {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.marginRight5 {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .choice__tab-body {
+        width: 640px;
+    }
+    .choice__tab-body-item-bkg2{
+        position: relative;
+        top: -74px;
+    }
+
+    .choice__tab-body-item-text {
+        margin-top: -133px;
+    }
+
+    .choice__tab-body-item-img {
+        width: 328px;
+        height: 232px;
+        margin-top: 20px;
+    }
+
+    .choice__tab-body-item-bkg2 {
+        width: 328px;
+        margin-top: 10px;
+    }
+
+    .marginRight1,
+    .marginRight2,
+    .marginRight3,
+    .marginRight4,
+    .marginRight5,
+    .marginRight6 {
+        margin-right: 0;
+    }
+
+    .choice__tab-body-item-pic2 {
+        margin-top: 20px;
+    }
+
+
+
+}
